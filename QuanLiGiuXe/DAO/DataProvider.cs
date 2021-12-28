@@ -11,7 +11,7 @@ namespace QuanLiGiuXe.DAO
     class DataProvider
     {
         private static DataProvider instance; // Ctrl + R + E
-        private string connectionSTR = @"Data Source=DESKTOP-G00H53A\SQLEXPRESS;Initial Catalog = QuanLyQuanCafe; Integrated Security = True";
+        private string connectionSTR = @"Data Source=DESKTOP-G00H53A\SQLEXPRESS;Initial Catalog = BaiGiuXe; Integrated Security = True";
 
         internal static DataProvider Instance
         {
