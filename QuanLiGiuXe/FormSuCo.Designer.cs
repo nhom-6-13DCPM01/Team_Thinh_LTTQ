@@ -1,6 +1,4 @@
-﻿@@ -0,0 + 1,370 @@
-﻿
-namespace QuanLiGiuXe
+﻿﻿namespace QuanLiGiuXe
 {
     partial class FormSuCo
     {
@@ -30,16 +28,10 @@ namespace QuanLiGiuXe
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanelMuc = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.labelMucBoiThuong = new System.Windows.Forms.Label();
-            this.pictureBoxMucBoiThuong = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.labelMucBienBan = new System.Windows.Forms.Label();
-            this.pictureBoxMucBienBan = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.labelMucKiemTra = new System.Windows.Forms.Label();
-            this.pictureBoxMucKiemTra = new System.Windows.Forms.PictureBox();
             this.dataGridViewSoXeVao = new System.Windows.Forms.DataGridView();
             this.dataGridViewSoXeRa = new System.Windows.Forms.DataGridView();
             this.groupBoxTimKiem = new System.Windows.Forms.GroupBox();
@@ -54,118 +46,62 @@ namespace QuanLiGiuXe
             this.labelBienSoXe = new System.Windows.Forms.Label();
             this.labelSoXeVao = new System.Windows.Forms.Label();
             this.labelSoXeRa = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.buttonMucKiemTra = new System.Windows.Forms.Button();
+            this.buttonMucBienBan = new System.Windows.Forms.Button();
+            this.buttonMucBoiThuong = new System.Windows.Forms.Button();
+            this.tableLayoutPanelMuc.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMucBoiThuong)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMucBienBan)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMucKiemTra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSoXeVao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSoXeRa)).BeginInit();
             this.groupBoxTimKiem.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // tableLayoutPanelMuc
             // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Controls.Add(this.panel3, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(873, 92);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanelMuc.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tableLayoutPanelMuc.ColumnCount = 3;
+            this.tableLayoutPanelMuc.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanelMuc.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanelMuc.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanelMuc.Controls.Add(this.panel3, 2, 0);
+            this.tableLayoutPanelMuc.Controls.Add(this.panel2, 1, 0);
+            this.tableLayoutPanelMuc.Controls.Add(this.panel1, 0, 0);
+            this.tableLayoutPanelMuc.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanelMuc.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanelMuc.Name = "tableLayoutPanelMuc";
+            this.tableLayoutPanelMuc.RowCount = 1;
+            this.tableLayoutPanelMuc.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanelMuc.Size = new System.Drawing.Size(873, 92);
+            this.tableLayoutPanelMuc.TabIndex = 0;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.labelMucBoiThuong);
-            this.panel3.Controls.Add(this.pictureBoxMucBoiThuong);
+            this.panel3.Controls.Add(this.buttonMucBoiThuong);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(585, 3);
+            this.panel3.Location = new System.Drawing.Point(585, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(285, 86);
+            this.panel3.Size = new System.Drawing.Size(283, 82);
             this.panel3.TabIndex = 2;
-            // 
-            // labelMucBoiThuong
-            // 
-            this.labelMucBoiThuong.AutoSize = true;
-            this.labelMucBoiThuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMucBoiThuong.Location = new System.Drawing.Point(83, 36);
-            this.labelMucBoiThuong.Name = "labelMucBoiThuong";
-            this.labelMucBoiThuong.Size = new System.Drawing.Size(194, 25);
-            this.labelMucBoiThuong.TabIndex = 5;
-            this.labelMucBoiThuong.Text = "Lập phiếu bồi thường";
-            // 
-            // pictureBoxMucBoiThuong
-            // 
-            this.pictureBoxMucBoiThuong.Location = new System.Drawing.Point(9, 9);
-            this.pictureBoxMucBoiThuong.Name = "pictureBoxMucBoiThuong";
-            this.pictureBoxMucBoiThuong.Size = new System.Drawing.Size(70, 70);
-            this.pictureBoxMucBoiThuong.TabIndex = 4;
-            this.pictureBoxMucBoiThuong.TabStop = false;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.labelMucBienBan);
-            this.panel2.Controls.Add(this.pictureBoxMucBienBan);
+            this.panel2.Controls.Add(this.buttonMucBienBan);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(294, 3);
+            this.panel2.Location = new System.Drawing.Point(295, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(285, 86);
+            this.panel2.Size = new System.Drawing.Size(282, 82);
             this.panel2.TabIndex = 1;
-            // 
-            // labelMucBienBan
-            // 
-            this.labelMucBienBan.AutoSize = true;
-            this.labelMucBienBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMucBienBan.Location = new System.Drawing.Point(130, 36);
-            this.labelMucBienBan.Name = "labelMucBienBan";
-            this.labelMucBienBan.Size = new System.Drawing.Size(125, 25);
-            this.labelMucBienBan.TabIndex = 3;
-            this.labelMucBienBan.Text = "Lập biên bản";
-            // 
-            // pictureBoxMucBienBan
-            // 
-            this.pictureBoxMucBienBan.Location = new System.Drawing.Point(13, 9);
-            this.pictureBoxMucBienBan.Name = "pictureBoxMucBienBan";
-            this.pictureBoxMucBienBan.Size = new System.Drawing.Size(70, 70);
-            this.pictureBoxMucBienBan.TabIndex = 2;
-            this.pictureBoxMucBienBan.TabStop = false;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.labelMucKiemTra);
-            this.panel1.Controls.Add(this.pictureBoxMucKiemTra);
+            this.panel1.Controls.Add(this.buttonMucKiemTra);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(5, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(285, 86);
+            this.panel1.Size = new System.Drawing.Size(282, 82);
             this.panel1.TabIndex = 0;
-            // 
-            // labelMucKiemTra
-            // 
-            this.labelMucKiemTra.AutoSize = true;
-            this.labelMucKiemTra.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMucKiemTra.Location = new System.Drawing.Point(117, 36);
-            this.labelMucKiemTra.Name = "labelMucKiemTra";
-            this.labelMucKiemTra.Size = new System.Drawing.Size(84, 25);
-            this.labelMucKiemTra.TabIndex = 1;
-            this.labelMucKiemTra.Text = "Kiểm tra";
-            // 
-            // pictureBoxMucKiemTra
-            // 
-            this.pictureBoxMucKiemTra.Location = new System.Drawing.Point(9, 9);
-            this.pictureBoxMucKiemTra.Name = "pictureBoxMucKiemTra";
-            this.pictureBoxMucKiemTra.Size = new System.Drawing.Size(70, 70);
-            this.pictureBoxMucKiemTra.TabIndex = 0;
-            this.pictureBoxMucKiemTra.TabStop = false;
             // 
             // dataGridViewSoXeVao
             // 
@@ -210,6 +146,7 @@ namespace QuanLiGiuXe
             this.buttonTimKiem.TabIndex = 8;
             this.buttonTimKiem.Text = "Tìm kiếm";
             this.buttonTimKiem.UseVisualStyleBackColor = true;
+            this.buttonTimKiem.Click += new System.EventHandler(this.buttonTimKiem_Click);
             // 
             // dateTimePickerNgayRa
             // 
@@ -307,6 +244,39 @@ namespace QuanLiGiuXe
             this.labelSoXeRa.TabIndex = 5;
             this.labelSoXeRa.Text = "Sổ xe ra";
             // 
+            // buttonMucKiemTra
+            // 
+            this.buttonMucKiemTra.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonMucKiemTra.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMucKiemTra.Location = new System.Drawing.Point(0, 0);
+            this.buttonMucKiemTra.Name = "buttonMucKiemTra";
+            this.buttonMucKiemTra.Size = new System.Drawing.Size(282, 82);
+            this.buttonMucKiemTra.TabIndex = 0;
+            this.buttonMucKiemTra.Text = "Kiểm tra";
+            this.buttonMucKiemTra.UseVisualStyleBackColor = true;
+            // 
+            // buttonMucBienBan
+            // 
+            this.buttonMucBienBan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonMucBienBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMucBienBan.Location = new System.Drawing.Point(0, 0);
+            this.buttonMucBienBan.Name = "buttonMucBienBan";
+            this.buttonMucBienBan.Size = new System.Drawing.Size(282, 82);
+            this.buttonMucBienBan.TabIndex = 1;
+            this.buttonMucBienBan.Text = "Lập biên bản";
+            this.buttonMucBienBan.UseVisualStyleBackColor = true;
+            // 
+            // buttonMucBoiThuong
+            // 
+            this.buttonMucBoiThuong.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonMucBoiThuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMucBoiThuong.Location = new System.Drawing.Point(0, 0);
+            this.buttonMucBoiThuong.Name = "buttonMucBoiThuong";
+            this.buttonMucBoiThuong.Size = new System.Drawing.Size(283, 82);
+            this.buttonMucBoiThuong.TabIndex = 2;
+            this.buttonMucBoiThuong.Text = "Lập phiếu bồi thường";
+            this.buttonMucBoiThuong.UseVisualStyleBackColor = true;
+            // 
             // FormSuCo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -317,21 +287,15 @@ namespace QuanLiGiuXe
             this.Controls.Add(this.groupBoxTimKiem);
             this.Controls.Add(this.dataGridViewSoXeRa);
             this.Controls.Add(this.dataGridViewSoXeVao);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.tableLayoutPanelMuc);
             this.MaximumSize = new System.Drawing.Size(889, 607);
             this.MinimumSize = new System.Drawing.Size(889, 607);
             this.Name = "FormSuCo";
             this.Text = "FormSuCo";
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanelMuc.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMucBoiThuong)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMucBienBan)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMucKiemTra)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSoXeVao)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSoXeRa)).EndInit();
             this.groupBoxTimKiem.ResumeLayout(false);
@@ -343,16 +307,10 @@ namespace QuanLiGiuXe
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelMuc;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label labelMucBoiThuong;
-        private System.Windows.Forms.PictureBox pictureBoxMucBoiThuong;
-        private System.Windows.Forms.Label labelMucBienBan;
-        private System.Windows.Forms.PictureBox pictureBoxMucBienBan;
-        private System.Windows.Forms.Label labelMucKiemTra;
-        private System.Windows.Forms.PictureBox pictureBoxMucKiemTra;
         private System.Windows.Forms.DataGridView dataGridViewSoXeVao;
         private System.Windows.Forms.DataGridView dataGridViewSoXeRa;
         private System.Windows.Forms.GroupBox groupBoxTimKiem;
@@ -367,5 +325,8 @@ namespace QuanLiGiuXe
         private System.Windows.Forms.Label labelSoXeVao;
         private System.Windows.Forms.Label labelSoXeRa;
         private System.Windows.Forms.Button buttonTimKiem;
+        private System.Windows.Forms.Button buttonMucBoiThuong;
+        private System.Windows.Forms.Button buttonMucBienBan;
+        private System.Windows.Forms.Button buttonMucKiemTra;
     }
 }

@@ -16,10 +16,5 @@ namespace QuanLiGiuXe
         {
             InitializeComponent();
         }
-
-        private void FormTrangChinh_Load(object sender, EventArgs e)
-        {
-            labelTenTeam.Text = " BÃI GIỮ XE " + "\n" + "THỊNH VIỆT";
-        }
     }
 }

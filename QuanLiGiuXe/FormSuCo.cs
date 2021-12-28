@@ -16,5 +16,10 @@ namespace QuanLiGiuXe
         {
             InitializeComponent();
         }
+
+        private void buttonTimKiem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
