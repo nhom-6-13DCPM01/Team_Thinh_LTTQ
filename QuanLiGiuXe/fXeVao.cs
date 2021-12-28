@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLiGiuXe
 {
-    public partial class Form1 : Form
+    public partial class fXeVao : Form
     {
-        public Form1()
+        public fXeVao()
         {
             InitializeComponent();
         }
