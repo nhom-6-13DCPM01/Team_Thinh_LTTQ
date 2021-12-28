@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fQuanLyXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQuanLyXe.Designer.cs">
+      <DependentUpon>fQuanLyXe.cs</DependentUpon>
+    </Compile>
     <Compile Include="fXeVao.cs">
       <SubType>Form</SubType>
     </Compile>
