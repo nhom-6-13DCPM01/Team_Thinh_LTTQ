@@ -37,6 +37,7 @@ namespace QuanLiGiuXe
         private void FormTrangChinh_Load(object sender, EventArgs e)
         {
             labelTenTeam.Text = " BÃI GIỮ XE " + "\n" + "THỊNH VIỆT";
+            OpenChildForm(new FormTrangChinh(), sender);
         }
 
         private void buttonTrangChinh_Click(object sender, EventArgs e)
