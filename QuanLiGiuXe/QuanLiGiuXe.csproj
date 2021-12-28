@@ -47,22 +47,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="fQuanLyXe.cs">
+    <Compile Include="FormDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fQuanLyXe.Designer.cs">
-      <DependentUpon>fQuanLyXe.cs</DependentUpon>
+    <Compile Include="FormDangNhap.Designer.cs">
+      <DependentUpon>FormDangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="fXeVao.cs">
+    <Compile Include="FormTrangChinh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fXeVao.Designer.cs">
-      <DependentUpon>fXeVao.cs</DependentUpon>
+    <Compile Include="FormTrangChinh.Designer.cs">
+      <DependentUpon>FormTrangChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormXeRa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormXeRa.Designer.cs">
+      <DependentUpon>FormXeRa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormXeVao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormXeVao.Designer.cs">
+      <DependentUpon>FormXeVao.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="fXeVao.resx">
-      <DependentUpon>fXeVao.cs</DependentUpon>
+    <EmbeddedResource Include="FormDangNhap.resx">
+      <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrangChinh.resx">
+      <DependentUpon>FormTrangChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormXeRa.resx">
+      <DependentUpon>FormXeRa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormXeVao.resx">
+      <DependentUpon>FormXeVao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
