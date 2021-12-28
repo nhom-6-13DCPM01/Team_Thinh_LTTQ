@@ -29,6 +29,7 @@ namespace QuanLiGiuXe
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLayout));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.buttonSuCo = new System.Windows.Forms.Button();
@@ -47,6 +48,7 @@ namespace QuanLiGiuXe
             // 
             // panelMenu
             // 
+            this.panelMenu.BackColor = System.Drawing.Color.PaleGreen;
             this.panelMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelMenu.Controls.Add(this.tableLayoutPanel1);
             this.panelMenu.Controls.Add(this.panelLogo);
@@ -78,50 +80,58 @@ namespace QuanLiGiuXe
             // 
             // buttonSuCo
             // 
+            this.buttonSuCo.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.buttonSuCo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonSuCo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSuCo.ForeColor = System.Drawing.Color.FloralWhite;
             this.buttonSuCo.Location = new System.Drawing.Point(5, 230);
             this.buttonSuCo.Name = "buttonSuCo";
             this.buttonSuCo.Size = new System.Drawing.Size(188, 70);
             this.buttonSuCo.TabIndex = 4;
             this.buttonSuCo.Text = "Sự cố";
-            this.buttonSuCo.UseVisualStyleBackColor = true;
+            this.buttonSuCo.UseVisualStyleBackColor = false;
             this.buttonSuCo.Click += new System.EventHandler(this.buttonSuCo_Click);
             // 
             // buttonXeRa
             // 
+            this.buttonXeRa.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.buttonXeRa.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonXeRa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonXeRa.ForeColor = System.Drawing.Color.FloralWhite;
             this.buttonXeRa.Location = new System.Drawing.Point(5, 155);
             this.buttonXeRa.Name = "buttonXeRa";
             this.buttonXeRa.Size = new System.Drawing.Size(188, 67);
             this.buttonXeRa.TabIndex = 3;
             this.buttonXeRa.Text = "Xe ra";
-            this.buttonXeRa.UseVisualStyleBackColor = true;
+            this.buttonXeRa.UseVisualStyleBackColor = false;
             this.buttonXeRa.Click += new System.EventHandler(this.buttonXeRa_Click);
             // 
             // buttonXeVao
             // 
+            this.buttonXeVao.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.buttonXeVao.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonXeVao.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonXeVao.ForeColor = System.Drawing.Color.FloralWhite;
             this.buttonXeVao.Location = new System.Drawing.Point(5, 80);
             this.buttonXeVao.Name = "buttonXeVao";
             this.buttonXeVao.Size = new System.Drawing.Size(188, 67);
             this.buttonXeVao.TabIndex = 2;
             this.buttonXeVao.Text = "Xe vào";
-            this.buttonXeVao.UseVisualStyleBackColor = true;
+            this.buttonXeVao.UseVisualStyleBackColor = false;
             this.buttonXeVao.Click += new System.EventHandler(this.buttonXeVao_Click);
             // 
             // buttonTrangChinh
             // 
+            this.buttonTrangChinh.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.buttonTrangChinh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonTrangChinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTrangChinh.ForeColor = System.Drawing.Color.FloralWhite;
             this.buttonTrangChinh.Location = new System.Drawing.Point(5, 5);
             this.buttonTrangChinh.Name = "buttonTrangChinh";
             this.buttonTrangChinh.Size = new System.Drawing.Size(188, 67);
             this.buttonTrangChinh.TabIndex = 0;
             this.buttonTrangChinh.Text = "Trang chính";
-            this.buttonTrangChinh.UseVisualStyleBackColor = true;
+            this.buttonTrangChinh.UseVisualStyleBackColor = false;
             this.buttonTrangChinh.Click += new System.EventHandler(this.buttonTrangChinh_Click);
             // 
             // panelLogo
@@ -138,7 +148,7 @@ namespace QuanLiGiuXe
             // 
             this.labelTenTeam.AutoSize = true;
             this.labelTenTeam.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTenTeam.Location = new System.Drawing.Point(44, 99);
+            this.labelTenTeam.Location = new System.Drawing.Point(38, 99);
             this.labelTenTeam.Name = "labelTenTeam";
             this.labelTenTeam.Size = new System.Drawing.Size(95, 25);
             this.labelTenTeam.TabIndex = 1;
@@ -148,9 +158,11 @@ namespace QuanLiGiuXe
             // pictureBoxLogo
             // 
             this.pictureBoxLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
             this.pictureBoxLogo.Location = new System.Drawing.Point(0, 0);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
             this.pictureBoxLogo.Size = new System.Drawing.Size(198, 96);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBoxLogo.TabIndex = 0;
             this.pictureBoxLogo.TabStop = false;
             this.pictureBoxLogo.Click += new System.EventHandler(this.pictureBoxLogo_Click);

@@ -30,8 +30,11 @@
         {
             this.tableLayoutPanelMuc = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.buttonMucBoiThuong = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.buttonMucBienBan = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonMucKiemTra = new System.Windows.Forms.Button();
             this.dataGridViewSoXeVao = new System.Windows.Forms.DataGridView();
             this.dataGridViewSoXeRa = new System.Windows.Forms.DataGridView();
             this.groupBoxTimKiem = new System.Windows.Forms.GroupBox();
@@ -46,9 +49,6 @@
             this.labelBienSoXe = new System.Windows.Forms.Label();
             this.labelSoXeVao = new System.Windows.Forms.Label();
             this.labelSoXeRa = new System.Windows.Forms.Label();
-            this.buttonMucKiemTra = new System.Windows.Forms.Button();
-            this.buttonMucBienBan = new System.Windows.Forms.Button();
-            this.buttonMucBoiThuong = new System.Windows.Forms.Button();
             this.tableLayoutPanelMuc.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -60,6 +60,7 @@
             // 
             // tableLayoutPanelMuc
             // 
+            this.tableLayoutPanelMuc.BackColor = System.Drawing.Color.PaleGreen;
             this.tableLayoutPanelMuc.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
             this.tableLayoutPanelMuc.ColumnCount = 3;
             this.tableLayoutPanelMuc.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -85,6 +86,19 @@
             this.panel3.Size = new System.Drawing.Size(283, 82);
             this.panel3.TabIndex = 2;
             // 
+            // buttonMucBoiThuong
+            // 
+            this.buttonMucBoiThuong.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.buttonMucBoiThuong.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonMucBoiThuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMucBoiThuong.ForeColor = System.Drawing.Color.FloralWhite;
+            this.buttonMucBoiThuong.Location = new System.Drawing.Point(0, 0);
+            this.buttonMucBoiThuong.Name = "buttonMucBoiThuong";
+            this.buttonMucBoiThuong.Size = new System.Drawing.Size(283, 82);
+            this.buttonMucBoiThuong.TabIndex = 2;
+            this.buttonMucBoiThuong.Text = "Lập phiếu bồi thường";
+            this.buttonMucBoiThuong.UseVisualStyleBackColor = false;
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.buttonMucBienBan);
@@ -94,6 +108,19 @@
             this.panel2.Size = new System.Drawing.Size(282, 82);
             this.panel2.TabIndex = 1;
             // 
+            // buttonMucBienBan
+            // 
+            this.buttonMucBienBan.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.buttonMucBienBan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonMucBienBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMucBienBan.ForeColor = System.Drawing.Color.FloralWhite;
+            this.buttonMucBienBan.Location = new System.Drawing.Point(0, 0);
+            this.buttonMucBienBan.Name = "buttonMucBienBan";
+            this.buttonMucBienBan.Size = new System.Drawing.Size(282, 82);
+            this.buttonMucBienBan.TabIndex = 1;
+            this.buttonMucBienBan.Text = "Lập biên bản";
+            this.buttonMucBienBan.UseVisualStyleBackColor = false;
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.buttonMucKiemTra);
@@ -102,6 +129,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(282, 82);
             this.panel1.TabIndex = 0;
+            // 
+            // buttonMucKiemTra
+            // 
+            this.buttonMucKiemTra.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.buttonMucKiemTra.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonMucKiemTra.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMucKiemTra.ForeColor = System.Drawing.Color.FloralWhite;
+            this.buttonMucKiemTra.Location = new System.Drawing.Point(0, 0);
+            this.buttonMucKiemTra.Name = "buttonMucKiemTra";
+            this.buttonMucKiemTra.Size = new System.Drawing.Size(282, 82);
+            this.buttonMucKiemTra.TabIndex = 0;
+            this.buttonMucKiemTra.Text = "Kiểm tra";
+            this.buttonMucKiemTra.UseVisualStyleBackColor = false;
             // 
             // dataGridViewSoXeVao
             // 
@@ -243,39 +283,6 @@
             this.labelSoXeRa.Size = new System.Drawing.Size(60, 17);
             this.labelSoXeRa.TabIndex = 5;
             this.labelSoXeRa.Text = "Sổ xe ra";
-            // 
-            // buttonMucKiemTra
-            // 
-            this.buttonMucKiemTra.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonMucKiemTra.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMucKiemTra.Location = new System.Drawing.Point(0, 0);
-            this.buttonMucKiemTra.Name = "buttonMucKiemTra";
-            this.buttonMucKiemTra.Size = new System.Drawing.Size(282, 82);
-            this.buttonMucKiemTra.TabIndex = 0;
-            this.buttonMucKiemTra.Text = "Kiểm tra";
-            this.buttonMucKiemTra.UseVisualStyleBackColor = true;
-            // 
-            // buttonMucBienBan
-            // 
-            this.buttonMucBienBan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonMucBienBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMucBienBan.Location = new System.Drawing.Point(0, 0);
-            this.buttonMucBienBan.Name = "buttonMucBienBan";
-            this.buttonMucBienBan.Size = new System.Drawing.Size(282, 82);
-            this.buttonMucBienBan.TabIndex = 1;
-            this.buttonMucBienBan.Text = "Lập biên bản";
-            this.buttonMucBienBan.UseVisualStyleBackColor = true;
-            // 
-            // buttonMucBoiThuong
-            // 
-            this.buttonMucBoiThuong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonMucBoiThuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMucBoiThuong.Location = new System.Drawing.Point(0, 0);
-            this.buttonMucBoiThuong.Name = "buttonMucBoiThuong";
-            this.buttonMucBoiThuong.Size = new System.Drawing.Size(283, 82);
-            this.buttonMucBoiThuong.TabIndex = 2;
-            this.buttonMucBoiThuong.Text = "Lập phiếu bồi thường";
-            this.buttonMucBoiThuong.UseVisualStyleBackColor = true;
             // 
             // FormSuCo
             // 
