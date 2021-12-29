@@ -23,8 +23,25 @@ namespace QuanLiGiuXe.DAO
         {
             return DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.SoXeVao");
         }
-        
-        public bool DeleteXeRa(string bienSo)
+
+        public DataTable GetListLoaiXe()
+        {
+            return DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.LoaiXe");
+        }
+        /*public string GetListLoaiXe(string loaiXe)
+        {
+            string query = "SELECT loaiXe FROM SoXeVao WHERE name = '" + loaiXe + "'";
+            string nameCategory = DataProvider.Instance.ExecuteScalar(query).ToString();
+            return nameCategory;
+        }*/
+        /* public string GetListLoaiXe(string loaixe)
+         {
+             string query = "SELECT loaiXe FROM SoXeVao";
+             string nameCategory = DataProvider.Instance.ExecuteScalar(query, new object[] { loaixe }).ToString();
+             return nameCategory;
+         }*/
+
+        public bool DeleteXeVao(string bienSo)
         {
             string query = string.Format("Delete SoXeVao where bienSo = N'{0}'", bienSo);
             int result = DataProvider.Instance.ExecuteNonQuery(query);

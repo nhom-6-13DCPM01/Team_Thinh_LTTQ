@@ -21,6 +21,10 @@ namespace QuanLiGiuXe
             InitializeComponent();
             dataGridViewXe.DataSource = list;
             LoadXeVao();
+            comboBoxLoaiXe.DataSource = SoXeVaoDAO.Instance.GetListLoaiXe();
+            comboBoxLoaiXe.DisplayMember = "tenLoaiXe";
+
+
         }
 
         void LoadXeVao()
@@ -31,13 +35,13 @@ namespace QuanLiGiuXe
         void DeleteXeRa(string bienSo)
         {
 
-            if (SoXeVaoDAO.Instance.DeleteXeRa(bienSo))
+            if (SoXeVaoDAO.Instance.DeleteXeVao(bienSo))
             {
-                MessageBox.Show("Xóa tài khoản thành công");
+                MessageBox.Show("Xóa xe thành công");
             }
             else
             {
-                MessageBox.Show("Xóa tài khoản thất bại");
+                MessageBox.Show("Xóa xe thất bại");
             }
 
             LoadXeVao();
@@ -47,11 +51,11 @@ namespace QuanLiGiuXe
         {
             if (SoXeVaoDAO.Instance.AddXeVao(bienSo, loaiXe, idBaiDo, thoiGianVao, mauXe))
             {
-                MessageBox.Show("Thêm tài khoản thành công");
+                MessageBox.Show("Thêm xe vào sổ thành công");
             }
             else
             {
-                MessageBox.Show("Thêm tài khoản thất bại");
+                MessageBox.Show("Thêm xe vào sổ thất bại");
             }
 
             LoadXeVao();
