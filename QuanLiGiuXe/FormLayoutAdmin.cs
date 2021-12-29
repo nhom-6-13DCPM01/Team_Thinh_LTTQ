@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace QuanLiGiuXe
 {
-    public partial class FormLayout : Form
+    public partial class FormLayoutAdmin : Form
     {
         //Thuộc tính
         private Form currentForm;
 
-        public FormLayout()
+        public FormLayoutAdmin()
         {
             InitializeComponent();
         }

@@ -68,7 +68,7 @@ namespace QuanLiGiuXe
             {
                 if (kiemTraTaiKhoanMatKhau("SELECT * FROM TaiKhoan WHERE TaiKhoan.tenTaiKhoan = '"+ textBoxTaiKhoan.Text.ToString() +"' AND TaiKhoan.matKhau = '"+ textBoxMatKhau.Text.ToString() +"'"))
                 {
-                    FormLayout form = new FormLayout();
+                    FormLayoutAdmin form = new FormLayoutAdmin();
                     this.Hide();
                     form.ShowDialog();
                     this.Close();
