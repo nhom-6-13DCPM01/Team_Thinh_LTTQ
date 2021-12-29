@@ -29,19 +29,17 @@ namespace QuanLiGiuXe
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBoxThongTin = new System.Windows.Forms.GroupBox();
             this.dateTimePickerThoiGianVao = new System.Windows.Forms.DateTimePicker();
             this.buttonThem = new System.Windows.Forms.Button();
             this.textBoxBienSoXe = new System.Windows.Forms.TextBox();
             this.labelBienSo = new System.Windows.Forms.Label();
             this.textBoxMauXe = new System.Windows.Forms.TextBox();
-            this.textBoxMaSoThe = new System.Windows.Forms.TextBox();
             this.labelMauXe = new System.Windows.Forms.Label();
             this.labelThoiGianVao = new System.Windows.Forms.Label();
             this.comboBoxLoaiXe = new System.Windows.Forms.ComboBox();
-            this.labelMaSoThe = new System.Windows.Forms.Label();
             this.label6LoaiXe = new System.Windows.Forms.Label();
             this.groupBoxTimKiem = new System.Windows.Forms.GroupBox();
             this.buttonLamMoi = new System.Windows.Forms.Button();
@@ -61,23 +59,22 @@ namespace QuanLiGiuXe
             // groupBoxThongTin
             // 
             this.groupBoxThongTin.Controls.Add(this.button1);
+            this.groupBoxThongTin.Controls.Add(this.buttonLamMoi);
             this.groupBoxThongTin.Controls.Add(this.dateTimePickerThoiGianVao);
             this.groupBoxThongTin.Controls.Add(this.buttonThem);
             this.groupBoxThongTin.Controls.Add(this.textBoxBienSoXe);
             this.groupBoxThongTin.Controls.Add(this.labelBienSo);
             this.groupBoxThongTin.Controls.Add(this.textBoxMauXe);
-            this.groupBoxThongTin.Controls.Add(this.textBoxMaSoThe);
             this.groupBoxThongTin.Controls.Add(this.labelMauXe);
             this.groupBoxThongTin.Controls.Add(this.labelThoiGianVao);
             this.groupBoxThongTin.Controls.Add(this.comboBoxLoaiXe);
-            this.groupBoxThongTin.Controls.Add(this.labelMaSoThe);
             this.groupBoxThongTin.Controls.Add(this.label6LoaiXe);
             this.groupBoxThongTin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxThongTin.Location = new System.Drawing.Point(496, 27);
             this.groupBoxThongTin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBoxThongTin.Name = "groupBoxThongTin";
             this.groupBoxThongTin.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxThongTin.Size = new System.Drawing.Size(632, 256);
+            this.groupBoxThongTin.Size = new System.Drawing.Size(632, 204);
             this.groupBoxThongTin.TabIndex = 35;
             this.groupBoxThongTin.TabStop = false;
             this.groupBoxThongTin.Text = "Bảng thông tin";
@@ -96,7 +93,7 @@ namespace QuanLiGiuXe
             // buttonThem
             // 
             this.buttonThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonThem.Location = new System.Drawing.Point(365, 196);
+            this.buttonThem.Location = new System.Drawing.Point(378, 146);
             this.buttonThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonThem.Name = "buttonThem";
             this.buttonThem.Size = new System.Drawing.Size(96, 31);
@@ -127,20 +124,11 @@ namespace QuanLiGiuXe
             // textBoxMauXe
             // 
             this.textBoxMauXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMauXe.Location = new System.Drawing.Point(461, 91);
+            this.textBoxMauXe.Location = new System.Drawing.Point(440, 92);
             this.textBoxMauXe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxMauXe.Name = "textBoxMauXe";
-            this.textBoxMauXe.Size = new System.Drawing.Size(148, 26);
+            this.textBoxMauXe.Size = new System.Drawing.Size(161, 26);
             this.textBoxMauXe.TabIndex = 29;
-            // 
-            // textBoxMaSoThe
-            // 
-            this.textBoxMaSoThe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMaSoThe.Location = new System.Drawing.Point(461, 32);
-            this.textBoxMaSoThe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxMaSoThe.Name = "textBoxMaSoThe";
-            this.textBoxMaSoThe.Size = new System.Drawing.Size(148, 26);
-            this.textBoxMaSoThe.TabIndex = 27;
             // 
             // labelMauXe
             // 
@@ -169,27 +157,17 @@ namespace QuanLiGiuXe
             this.comboBoxLoaiXe.Items.AddRange(new object[] {
             "xe tay ga",
             "xe so"});
-            this.comboBoxLoaiXe.Location = new System.Drawing.Point(160, 143);
+            this.comboBoxLoaiXe.Location = new System.Drawing.Point(440, 34);
             this.comboBoxLoaiXe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxLoaiXe.Name = "comboBoxLoaiXe";
             this.comboBoxLoaiXe.Size = new System.Drawing.Size(161, 28);
             this.comboBoxLoaiXe.TabIndex = 26;
             // 
-            // labelMaSoThe
-            // 
-            this.labelMaSoThe.AutoSize = true;
-            this.labelMaSoThe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMaSoThe.Location = new System.Drawing.Point(361, 38);
-            this.labelMaSoThe.Name = "labelMaSoThe";
-            this.labelMaSoThe.Size = new System.Drawing.Size(93, 20);
-            this.labelMaSoThe.TabIndex = 25;
-            this.labelMaSoThe.Text = "Mã số thẻ :";
-            // 
             // label6LoaiXe
             // 
             this.label6LoaiXe.AutoSize = true;
             this.label6LoaiXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6LoaiXe.Location = new System.Drawing.Point(17, 146);
+            this.label6LoaiXe.Location = new System.Drawing.Point(359, 37);
             this.label6LoaiXe.Name = "label6LoaiXe";
             this.label6LoaiXe.Size = new System.Drawing.Size(73, 20);
             this.label6LoaiXe.TabIndex = 23;
@@ -198,7 +176,6 @@ namespace QuanLiGiuXe
             // groupBoxTimKiem
             // 
             this.groupBoxTimKiem.Controls.Add(this.txtTKxe);
-            this.groupBoxTimKiem.Controls.Add(this.buttonLamMoi);
             this.groupBoxTimKiem.Controls.Add(this.labelLoaiXeTimKiem);
             this.groupBoxTimKiem.Controls.Add(this.buttonTimKiem);
             this.groupBoxTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -206,7 +183,7 @@ namespace QuanLiGiuXe
             this.groupBoxTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBoxTimKiem.Name = "groupBoxTimKiem";
             this.groupBoxTimKiem.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxTimKiem.Size = new System.Drawing.Size(445, 256);
+            this.groupBoxTimKiem.Size = new System.Drawing.Size(445, 80);
             this.groupBoxTimKiem.TabIndex = 34;
             this.groupBoxTimKiem.TabStop = false;
             this.groupBoxTimKiem.Text = "Tìm kiếm";
@@ -214,10 +191,10 @@ namespace QuanLiGiuXe
             // buttonLamMoi
             // 
             this.buttonLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLamMoi.Location = new System.Drawing.Point(310, 86);
+            this.buttonLamMoi.Location = new System.Drawing.Point(241, 143);
             this.buttonLamMoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonLamMoi.Name = "buttonLamMoi";
-            this.buttonLamMoi.Size = new System.Drawing.Size(93, 36);
+            this.buttonLamMoi.Size = new System.Drawing.Size(97, 34);
             this.buttonLamMoi.TabIndex = 19;
             this.buttonLamMoi.Text = "Làm mới";
             this.buttonLamMoi.UseVisualStyleBackColor = true;
@@ -236,7 +213,7 @@ namespace QuanLiGiuXe
             // buttonTimKiem
             // 
             this.buttonTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTimKiem.Location = new System.Drawing.Point(310, 24);
+            this.buttonTimKiem.Location = new System.Drawing.Point(316, 22);
             this.buttonTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonTimKiem.Name = "buttonTimKiem";
             this.buttonTimKiem.Size = new System.Drawing.Size(93, 34);
@@ -249,24 +226,24 @@ namespace QuanLiGiuXe
             // 
             this.dataGridViewXe.AllowUserToAddRows = false;
             this.dataGridViewXe.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewXe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewXe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dataGridViewXe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewXe.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridViewXe.Location = new System.Drawing.Point(496, 313);
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewXe.DefaultCellStyle = dataGridViewCellStyle12;
+            this.dataGridViewXe.Location = new System.Drawing.Point(496, 253);
             this.dataGridViewXe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewXe.Name = "dataGridViewXe";
             this.dataGridViewXe.ReadOnly = true;
@@ -279,7 +256,7 @@ namespace QuanLiGiuXe
             // 
             this.labelChoTrong.AutoSize = true;
             this.labelChoTrong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelChoTrong.Location = new System.Drawing.Point(27, 291);
+            this.labelChoTrong.Location = new System.Drawing.Point(37, 233);
             this.labelChoTrong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelChoTrong.Name = "labelChoTrong";
             this.labelChoTrong.Size = new System.Drawing.Size(82, 20);
@@ -290,7 +267,7 @@ namespace QuanLiGiuXe
             // 
             this.labelXe.AutoSize = true;
             this.labelXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelXe.Location = new System.Drawing.Point(492, 291);
+            this.labelXe.Location = new System.Drawing.Point(492, 233);
             this.labelXe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelXe.Name = "labelXe";
             this.labelXe.Size = new System.Drawing.Size(29, 20);
@@ -300,7 +277,7 @@ namespace QuanLiGiuXe
             // tabControlBaiDo
             // 
             this.tabControlBaiDo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControlBaiDo.Location = new System.Drawing.Point(31, 313);
+            this.tabControlBaiDo.Location = new System.Drawing.Point(31, 253);
             this.tabControlBaiDo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabControlBaiDo.Name = "tabControlBaiDo";
             this.tabControlBaiDo.SelectedIndex = 0;
@@ -310,7 +287,7 @@ namespace QuanLiGiuXe
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(502, 196);
+            this.button1.Location = new System.Drawing.Point(515, 148);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(86, 31);
@@ -361,11 +338,9 @@ namespace QuanLiGiuXe
         private System.Windows.Forms.TextBox textBoxBienSoXe;
         private System.Windows.Forms.Label labelBienSo;
         private System.Windows.Forms.TextBox textBoxMauXe;
-        private System.Windows.Forms.TextBox textBoxMaSoThe;
         private System.Windows.Forms.Label labelMauXe;
         private System.Windows.Forms.Label labelThoiGianVao;
         private System.Windows.Forms.ComboBox comboBoxLoaiXe;
-        private System.Windows.Forms.Label labelMaSoThe;
         private System.Windows.Forms.Label label6LoaiXe;
         private System.Windows.Forms.GroupBox groupBoxTimKiem;
         private System.Windows.Forms.Button buttonLamMoi;

@@ -24,22 +24,8 @@ namespace QuanLiGiuXe.DAO
             return DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.SoXeVao");
         }
 
-        public DataTable GetListLoaiXe()
-        {
-            return DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.LoaiXe");
-        }
-        /*public string GetListLoaiXe(string loaiXe)
-        {
-            string query = "SELECT loaiXe FROM SoXeVao WHERE name = '" + loaiXe + "'";
-            string nameCategory = DataProvider.Instance.ExecuteScalar(query).ToString();
-            return nameCategory;
-        }*/
-        /* public string GetListLoaiXe(string loaixe)
-         {
-             string query = "SELECT loaiXe FROM SoXeVao";
-             string nameCategory = DataProvider.Instance.ExecuteScalar(query, new object[] { loaixe }).ToString();
-             return nameCategory;
-         }*/
+       
+        
 
         public bool DeleteXeVao(string bienSo)
         {
@@ -48,9 +34,9 @@ namespace QuanLiGiuXe.DAO
             return result > 0;
         }
 
-        public bool AddXeVao(string bienSo, string loaiXe, int idBaiDo, DateTime thoiGianVao, string mauXe)
+        public bool AddXeVao(string bienSo, string loaiXe, DateTime thoiGianVao, string mauXe)
         {
-            string query = string.Format("INSERT dbo.SoXeVao ( bienSo, loaiXe, idBaiDo ,thoiGianVao,mauXe )VALUES  ( N'{0}', N'{1}','{2}' ,N'{3}', N'{4}')", bienSo, loaiXe, idBaiDo, thoiGianVao, mauXe);
+            string query = string.Format("INSERT dbo.SoXeVao ( bienSo, loaiXe,thoiGianVao,mauXe )VALUES  ( N'{0}', N'{1}','{2}' ,N'{3}')", bienSo, loaiXe,thoiGianVao, mauXe);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
 
             return result > 0;
@@ -60,7 +46,7 @@ namespace QuanLiGiuXe.DAO
         {
             List<SoXeVao> list = new List<SoXeVao>();
 
-            string query = "SELECT * FROM SoXeVao WHERE bienSo = @bienSo";
+            string query = "SELECT * FROM SoXeVao WHERE bienSo like @bienSo";
 
             DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { bienSo });
 

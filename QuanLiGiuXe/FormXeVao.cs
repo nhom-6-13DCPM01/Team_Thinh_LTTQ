@@ -21,7 +21,7 @@ namespace QuanLiGiuXe
             InitializeComponent();
             dataGridViewXe.DataSource = list;
             LoadXeVao();
-            comboBoxLoaiXe.DataSource = SoXeVaoDAO.Instance.GetListLoaiXe();
+            comboBoxLoaiXe.DataSource = LoaiXeDAO.Instance.GetListLoaiXe();
             comboBoxLoaiXe.DisplayMember = "tenLoaiXe";
 
 
@@ -47,9 +47,9 @@ namespace QuanLiGiuXe
             LoadXeVao();
         }
 
-        void AddXeVao(string bienSo, string loaiXe, int idBaiDo, DateTime thoiGianVao, string mauXe)
+        void AddXeVao(string bienSo, string loaiXe, DateTime thoiGianVao, string mauXe)
         {
-            if (SoXeVaoDAO.Instance.AddXeVao(bienSo, loaiXe, idBaiDo, thoiGianVao, mauXe))
+            if (SoXeVaoDAO.Instance.AddXeVao(bienSo, loaiXe, thoiGianVao, mauXe))
             {
                 MessageBox.Show("Thêm xe vào sổ thành công");
             }
@@ -70,13 +70,13 @@ namespace QuanLiGiuXe
 
         private void buttonThem_Click(object sender, EventArgs e)
         {
+
             string bienSo = textBoxBienSoXe.Text;
             string loaiXe = comboBoxLoaiXe.Text;
             DateTime thoiGianVao = dateTimePickerThoiGianVao.Value;
             string mauXe = textBoxMauXe.Text;
-            int idBaiDo = 1;
 
-            AddXeVao(bienSo, loaiXe, idBaiDo, thoiGianVao, mauXe);
+            AddXeVao(bienSo, loaiXe, thoiGianVao, mauXe);
         }
 
         public List<SoXeVao> SearchXeVao(string bienSo)

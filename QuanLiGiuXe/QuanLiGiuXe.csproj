@@ -49,8 +49,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\LoaiXeDAO.cs" />
+    <Compile Include="DAO\SoXeRaDAO.cs" />
     <Compile Include="DAO\SoXeVaoDAO.cs" />
-    <Compile Include="DBacess.cs" />
+    <Compile Include="DTO\LoaiXe.cs" />
+    <Compile Include="DTO\SoXeRa.cs" />
     <Compile Include="DTO\SoXeVao.cs" />
     <Compile Include="FormDangNhap.cs">
       <SubType>Form</SubType>
