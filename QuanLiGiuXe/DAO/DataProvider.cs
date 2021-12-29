@@ -11,7 +11,7 @@ namespace QuanLiGiuXe.DAO
     class DataProvider
     {
         private static DataProvider instance; // Ctrl + R + E
-        private string connectionSTR = @"Data Source=DESKTOP-G00H53A\SQLEXPRESS;Initial Catalog = QuanLyQuanCafe; Integrated Security = True";
+        private string connectionSTR = @"Data Source=DESKTOP-G00H53A\SQLEXPRESS;Initial Catalog = BaiGiuXe; Integrated Security = True";
 
         internal static DataProvider Instance
         {
@@ -58,13 +58,10 @@ namespace QuanLiGiuXe.DAO
         public int ExecuteNonQuery(string query, object[] parameter = null)
         {
             int data = 0;
-
             using (SqlConnection connection = new SqlConnection(connectionSTR))
             {
                 connection.Open();
-
                 SqlCommand command = new SqlCommand(query, connection);
-
                 if (parameter != null)
                 {
                     string[] listPara = query.Split(' ');
@@ -78,12 +75,11 @@ namespace QuanLiGiuXe.DAO
                         }
                     }
                 }
-
                 data = command.ExecuteNonQuery();
 
                 connection.Close();
-            }
 
+            }
             return data;
         }
     }
