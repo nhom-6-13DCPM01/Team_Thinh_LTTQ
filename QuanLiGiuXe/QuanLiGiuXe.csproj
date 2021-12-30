@@ -49,6 +49,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\KhuVucDAO.cs" />
+    <Compile Include="DAO\LoaiXeDAO.cs" />
+    <Compile Include="DAO\SoXeRaDAO.cs" />
+    <Compile Include="DAO\SoXeVaoDAO.cs" />
+    <Compile Include="DAO\ViTriDAO.cs" />
+    <Compile Include="DTO\KhuVuc.cs" />
+    <Compile Include="DTO\LoaiXe.cs" />
+    <Compile Include="DTO\SoXeRa.cs" />
+    <Compile Include="DTO\SoXeVao.cs" />
+    <Compile Include="DTO\ViTri.cs" />
     <Compile Include="FormDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +70,12 @@
     </Compile>
     <Compile Include="FormLayoutNhanVien.Designer.cs">
       <DependentUpon>FormLayoutNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuanLyKhuVuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuanLyKhuVuc.Designer.cs">
+      <DependentUpon>FormQuanLyKhuVuc.cs</DependentUpon>
     </Compile>
     <Compile Include="FormSuCo.cs">
       <SubType>Form</SubType>
@@ -78,6 +94,12 @@
     </Compile>
     <Compile Include="FormTrangChinh.Designer.cs">
       <DependentUpon>FormTrangChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormViTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormViTri.Designer.cs">
+      <DependentUpon>FormViTri.cs</DependentUpon>
     </Compile>
     <Compile Include="FormXeRa.cs">
       <SubType>Form</SubType>
@@ -99,6 +121,9 @@
     <EmbeddedResource Include="FormLayoutNhanVien.resx">
       <DependentUpon>FormLayoutNhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormQuanLyKhuVuc.resx">
+      <DependentUpon>FormQuanLyKhuVuc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSuCo.resx">
       <DependentUpon>FormSuCo.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormTrangChinh.resx">
       <DependentUpon>FormTrangChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormViTri.resx">
+      <DependentUpon>FormViTri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormXeRa.resx">
       <DependentUpon>FormXeRa.cs</DependentUpon>
@@ -137,8 +165,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DTO\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
