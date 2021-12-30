@@ -151,7 +151,6 @@ namespace QuanLiGiuXe
             this.txtMaViTri.Location = new System.Drawing.Point(145, 35);
             this.txtMaViTri.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaViTri.Name = "txtMaViTri";
-            this.txtMaViTri.ReadOnly = true;
             this.txtMaViTri.Size = new System.Drawing.Size(161, 26);
             this.txtMaViTri.TabIndex = 22;
             // 
