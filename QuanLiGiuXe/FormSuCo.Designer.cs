@@ -193,9 +193,9 @@
             this.dateTimePickerNgayRa.CustomFormat = "dd/MM/yyyy hh:mm";
             this.dateTimePickerNgayRa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerNgayRa.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerNgayRa.Location = new System.Drawing.Point(496, 33);
+            this.dateTimePickerNgayRa.Location = new System.Drawing.Point(495, 33);
             this.dateTimePickerNgayRa.Name = "dateTimePickerNgayRa";
-            this.dateTimePickerNgayRa.Size = new System.Drawing.Size(118, 23);
+            this.dateTimePickerNgayRa.Size = new System.Drawing.Size(125, 23);
             this.dateTimePickerNgayRa.TabIndex = 7;
             // 
             // labelNgayRa
@@ -213,16 +213,16 @@
             this.dateTimePickerNgayVao.CustomFormat = "dd/MM/yyyy hh:mm";
             this.dateTimePickerNgayVao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerNgayVao.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerNgayVao.Location = new System.Drawing.Point(299, 34);
+            this.dateTimePickerNgayVao.Location = new System.Drawing.Point(295, 33);
             this.dateTimePickerNgayVao.Name = "dateTimePickerNgayVao";
-            this.dateTimePickerNgayVao.Size = new System.Drawing.Size(118, 23);
+            this.dateTimePickerNgayVao.Size = new System.Drawing.Size(126, 23);
             this.dateTimePickerNgayVao.TabIndex = 5;
             // 
             // labelNgayVao
             // 
             this.labelNgayVao.AutoSize = true;
             this.labelNgayVao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNgayVao.Location = new System.Drawing.Point(221, 37);
+            this.labelNgayVao.Location = new System.Drawing.Point(219, 37);
             this.labelNgayVao.Name = "labelNgayVao";
             this.labelNgayVao.Size = new System.Drawing.Size(72, 17);
             this.labelNgayVao.TabIndex = 4;
@@ -231,7 +231,7 @@
             // textBoxBaiDo
             // 
             this.textBoxBaiDo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxBaiDo.Location = new System.Drawing.Point(686, 32);
+            this.textBoxBaiDo.Location = new System.Drawing.Point(686, 34);
             this.textBoxBaiDo.Name = "textBoxBaiDo";
             this.textBoxBaiDo.Size = new System.Drawing.Size(119, 23);
             this.textBoxBaiDo.TabIndex = 3;
@@ -240,7 +240,7 @@
             // 
             this.labelBaiDo.AutoSize = true;
             this.labelBaiDo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBaiDo.Location = new System.Drawing.Point(628, 36);
+            this.labelBaiDo.Location = new System.Drawing.Point(629, 36);
             this.labelBaiDo.Name = "labelBaiDo";
             this.labelBaiDo.Size = new System.Drawing.Size(52, 17);
             this.labelBaiDo.TabIndex = 2;
@@ -249,7 +249,7 @@
             // textBoxBienSoXe
             // 
             this.textBoxBienSoXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxBienSoXe.Location = new System.Drawing.Point(94, 35);
+            this.textBoxBienSoXe.Location = new System.Drawing.Point(91, 33);
             this.textBoxBienSoXe.Name = "textBoxBienSoXe";
             this.textBoxBienSoXe.Size = new System.Drawing.Size(119, 23);
             this.textBoxBienSoXe.TabIndex = 1;
@@ -258,7 +258,7 @@
             // 
             this.labelBienSoXe.AutoSize = true;
             this.labelBienSoXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBienSoXe.Location = new System.Drawing.Point(11, 37);
+            this.labelBienSoXe.Location = new System.Drawing.Point(9, 37);
             this.labelBienSoXe.Name = "labelBienSoXe";
             this.labelBienSoXe.Size = new System.Drawing.Size(77, 17);
             this.labelBienSoXe.TabIndex = 0;
@@ -299,6 +299,7 @@
             this.MinimumSize = new System.Drawing.Size(889, 607);
             this.Name = "FormSuCo";
             this.Text = "FormSuCo";
+            this.Load += new System.EventHandler(this.FormSuCo_Load);
             this.tableLayoutPanelMuc.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

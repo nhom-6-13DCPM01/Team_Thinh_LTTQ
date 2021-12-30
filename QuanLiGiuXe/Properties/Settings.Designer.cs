@@ -22,5 +22,61 @@ namespace QuanLiGiuXe.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string TaiKhoan {
+            get {
+                return ((string)(this["TaiKhoan"]));
+            }
+            set {
+                this["TaiKhoan"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string matKhau {
+            get {
+                return ((string)(this["matKhau"]));
+            }
+            set {
+                this["matKhau"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool check {
+            get {
+                return ((bool)(this["check"]));
+            }
+            set {
+                this["check"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-J98APIA;Initial Catalog=DBBaiGiuXe;Integrated Security=True")]
+        public string DBBaiGiuXeConnectionString {
+            get {
+                return ((string)(this["DBBaiGiuXeConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-J98APIA;Initial Catalog=DBCuoiKy;Integrated Security=True")]
+        public string DBCuoiKyConnectionString {
+            get {
+                return ((string)(this["DBCuoiKyConnectionString"]));
+            }
+        }
     }
 }

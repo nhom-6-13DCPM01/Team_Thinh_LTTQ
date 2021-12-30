@@ -13,10 +13,10 @@ namespace QuanLiGiuXe
 {
     public partial class FormTrangChinh : Form
     {
-        SqlConnection connection;
-        String connectionString = "Data Source=DESKTOP-J98APIA;Initial Catalog=BaiGiuXe;Integrated Security=True";
-        SqlCommand command;
-        SqlDataAdapter adapter = new SqlDataAdapter();
+        private SqlConnection connection;
+        private String connectionString = "Data Source=DESKTOP-J98APIA;Initial Catalog=DBCuoiKy;Integrated Security=True";
+        private SqlCommand command;
+        private SqlDataAdapter adapter = new SqlDataAdapter();
 
         public FormTrangChinh()
         {
@@ -86,16 +86,16 @@ namespace QuanLiGiuXe
 
         private void FormTrangChinh_Load(object sender, EventArgs e)
         {
-            load_data_combobox("SELECT YEAR(SoXeRa.thoiGianRa) 'Năm' FROM SoXeRa GROUP BY YEAR(SoXeRa.thoiGianRa) ORDER BY YEAR(SoXeRa.thoiGianRa)");
+            load_data_combobox("SELECT YEAR(NgayThanhToan) 'Năm' FROM HoaDon");
             buttonXacNhan_Click(sender, e);
-            load_data_label("SELECT SUM(SoXeRa.tongTien)'total' FROM SoXeRa WHERE YEAR(SoXeRa.thoiGianRa) >= '"+ DateTime.MinValue.Year.ToString() +"' AND YEAR(SoXeRa.thoiGianRa) <= '"+ DateTime.MaxValue.Year.ToString() +"'");
-            load_data_labelByYear("SELECT SUM(SoXeRa.tongTien)'total' FROM SoXeRa WHERE YEAR(SoXeRa.thoiGianRa) = '" + DateTime.Now.Year.ToString() + "'");
+            load_data_label("SELECT SUM(TongTien)'total' FROM HoaDon WHERE YEAR(NgayThanhToan) >= '"+ DateTime.MinValue.Year.ToString() +"' AND YEAR(NgayThanhToan) <= '"+ DateTime.MaxValue.Year.ToString() +"'");
+            load_data_labelByYear("SELECT SUM(TongTien)'total' FROM HoaDon WHERE YEAR(NgayThanhToan) = '" + DateTime.Now.Year.ToString() + "'");
         }
 
         private void buttonXacNhan_Click(object sender, EventArgs e)
         {
-            load_data_chart("SELECT MONTH(SoXeRa.thoiGianRa) 'Tháng', SUM(SoXeRa.tongTien) 'Tổng tiền' FROM SoXeRa WHERE YEAR(SoXeRa.thoiGianRa) = '" + comboBoxNam.Text.ToString() + "' GROUP BY MONTH(SoXeRa.thoiGianRa) ORDER BY MONTH(SoXeRa.thoiGianRa)");
-            load_data_labelByYear("SELECT SUM(SoXeRa.tongTien)'total' FROM SoXeRa WHERE YEAR(SoXeRa.thoiGianRa) = '"+ comboBoxNam.Text.ToString() +"'");
+            load_data_chart("SELECT TongTien 'Tổng tiền', MONTH(NgayThanhToan) 'Tháng' FROM HoaDon");
+            load_data_labelByYear("SELECT SUM(TongTien) 'total' FROM HoaDon WHERE YEAR(NgayThanhToan) = '"+ comboBoxNam.Text.ToString() +"'");
         }
     }
 }

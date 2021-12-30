@@ -50,11 +50,13 @@ namespace QuanLiGiuXe
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(459, 83);
+            this.panel1.Size = new System.Drawing.Size(421, 83);
             this.panel1.TabIndex = 0;
             // 
             // labelTitle
             // 
+            this.labelTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.labelTitle.AutoSize = true;
             this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitle.Location = new System.Drawing.Point(104, 32);
@@ -73,14 +75,16 @@ namespace QuanLiGiuXe
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 83);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(459, 406);
+            this.panel2.Size = new System.Drawing.Size(421, 301);
             this.panel2.TabIndex = 1;
             // 
             // checkBoxNhoMatKhau
             // 
+            this.checkBoxNhoMatKhau.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBoxNhoMatKhau.AutoSize = true;
             this.checkBoxNhoMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxNhoMatKhau.Location = new System.Drawing.Point(30, 225);
+            this.checkBoxNhoMatKhau.Location = new System.Drawing.Point(30, 156);
             this.checkBoxNhoMatKhau.Name = "checkBoxNhoMatKhau";
             this.checkBoxNhoMatKhau.Size = new System.Drawing.Size(123, 21);
             this.checkBoxNhoMatKhau.TabIndex = 4;
@@ -89,18 +93,22 @@ namespace QuanLiGiuXe
             // 
             // textBoxMatKhau
             // 
+            this.textBoxMatKhau.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMatKhau.Location = new System.Drawing.Point(117, 146);
+            this.textBoxMatKhau.Location = new System.Drawing.Point(117, 96);
             this.textBoxMatKhau.Name = "textBoxMatKhau";
-            this.textBoxMatKhau.Size = new System.Drawing.Size(225, 23);
+            this.textBoxMatKhau.Size = new System.Drawing.Size(208, 23);
             this.textBoxMatKhau.TabIndex = 3;
             this.textBoxMatKhau.UseSystemPasswordChar = true;
             // 
             // labelMatKhau
             // 
+            this.labelMatKhau.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.labelMatKhau.AutoSize = true;
             this.labelMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMatKhau.Location = new System.Drawing.Point(36, 149);
+            this.labelMatKhau.Location = new System.Drawing.Point(36, 99);
             this.labelMatKhau.Name = "labelMatKhau";
             this.labelMatKhau.Size = new System.Drawing.Size(70, 17);
             this.labelMatKhau.TabIndex = 2;
@@ -108,14 +116,18 @@ namespace QuanLiGiuXe
             // 
             // textBoxTaiKhoan
             // 
+            this.textBoxTaiKhoan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTaiKhoan.Location = new System.Drawing.Point(117, 54);
             this.textBoxTaiKhoan.Name = "textBoxTaiKhoan";
-            this.textBoxTaiKhoan.Size = new System.Drawing.Size(225, 23);
+            this.textBoxTaiKhoan.Size = new System.Drawing.Size(208, 23);
             this.textBoxTaiKhoan.TabIndex = 1;
             // 
             // labelTaiKhoan
             // 
+            this.labelTaiKhoan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.labelTaiKhoan.AutoSize = true;
             this.labelTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTaiKhoan.Location = new System.Drawing.Point(36, 57);
@@ -128,16 +140,18 @@ namespace QuanLiGiuXe
             // 
             this.panel3.Controls.Add(this.buttonDangNhap);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 396);
+            this.panel3.Location = new System.Drawing.Point(0, 291);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(459, 93);
+            this.panel3.Size = new System.Drawing.Size(421, 93);
             this.panel3.TabIndex = 2;
             // 
             // buttonDangNhap
             // 
+            this.buttonDangNhap.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonDangNhap.Location = new System.Drawing.Point(161, 39);
             this.buttonDangNhap.Name = "buttonDangNhap";
-            this.buttonDangNhap.Size = new System.Drawing.Size(98, 42);
+            this.buttonDangNhap.Size = new System.Drawing.Size(81, 42);
             this.buttonDangNhap.TabIndex = 0;
             this.buttonDangNhap.Text = "Đăng nhập";
             this.buttonDangNhap.UseVisualStyleBackColor = true;
@@ -147,12 +161,13 @@ namespace QuanLiGiuXe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(459, 489);
+            this.ClientSize = new System.Drawing.Size(421, 384);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "FormDangNhap";
             this.Text = "FormDangNhap";
+            this.Load += new System.EventHandler(this.FormDangNhap_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
