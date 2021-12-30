@@ -74,9 +74,7 @@ namespace QuanLiGiuXe
             string bienSo = textBoxBienSoXe.Text;
             string loaiXe = comboBoxLoaiXe.Text;
             DateTime thoiGianVao = dateTimePickerThoiGianVao.Value;
-            string mauXe = textBoxMauXe.Text;
-
-            AddXeVao(bienSo, loaiXe, thoiGianVao, mauXe);
+            AddXeVao(bienSo, loaiXe, thoiGianVao, "");
         }
 
         public List<SoXeVao> SearchXeVao(string bienSo)
