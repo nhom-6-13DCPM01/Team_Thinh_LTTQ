@@ -51,9 +51,13 @@
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\KhuVucDAO.cs" />
     <Compile Include="DAO\LoaiXeDAO.cs" />
+    <Compile Include="DAO\NhanVienDAO.cs" />
+    <Compile Include="DAO\TaiKhoanDAO.cs" />
     <Compile Include="DAO\ViTriDAO.cs" />
     <Compile Include="DTO\KhuVuc.cs" />
     <Compile Include="DTO\LoaiXe.cs" />
+    <Compile Include="DTO\NhanVien.cs" />
+    <Compile Include="DTO\TaiKhoan.cs" />
     <Compile Include="DTO\ViTri.cs" />
     <Compile Include="FormDangNhap.cs">
       <SubType>Form</SubType>
@@ -72,6 +76,12 @@
     </Compile>
     <Compile Include="FormLoaiXe.Designer.cs">
       <DependentUpon>FormLoaiXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNhanVien.Designer.cs">
+      <DependentUpon>FormNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="FormQuanLyKhuVuc.cs">
       <SubType>Form</SubType>
@@ -115,6 +125,12 @@
     <Compile Include="FormXeVao.Designer.cs">
       <DependentUpon>FormXeVao.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormQuanLyTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuanLyTK.Designer.cs">
+      <DependentUpon>FormQuanLyTK.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormDangNhap.resx">
@@ -125,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLoaiXe.resx">
       <DependentUpon>FormLoaiXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNhanVien.resx">
+      <DependentUpon>FormNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormQuanLyKhuVuc.resx">
       <DependentUpon>FormQuanLyKhuVuc.cs</DependentUpon>
@@ -146,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormXeVao.resx">
       <DependentUpon>FormXeVao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuanLyTK.resx">
+      <DependentUpon>FormQuanLyTK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

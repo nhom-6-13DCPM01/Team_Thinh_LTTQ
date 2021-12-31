@@ -48,9 +48,9 @@ namespace QuanLiGiuXe
 
         }
 
-        void UpdateLoaiXe(string tenloaixe,decimal gia)
+        void UpdateLoaiXe(int maloaixe,string tenloaixe,decimal gia)
         {
-            if (LoaiXeDAO.Instance.UpdateLoaiXe(tenloaixe, gia))
+            if (LoaiXeDAO.Instance.UpdateLoaiXe(maloaixe, tenloaixe, gia))
             {
                 MessageBox.Show("Sửa thành công");
             }
@@ -65,9 +65,10 @@ namespace QuanLiGiuXe
 
         private void btnSua_Click(object sender, EventArgs e)
         {
+            int maloaixe = Convert.ToInt32(txtMaLoaiXe.Text);
             string tenloaixe = txtTenLoaiXe.Text;
             decimal gia = Convert.ToDecimal(txtDonGia.Text);
-            UpdateLoaiXe(tenloaixe, gia);
+            UpdateLoaiXe(maloaixe,tenloaixe, gia);
             LoadLoaiXe();
 
         }

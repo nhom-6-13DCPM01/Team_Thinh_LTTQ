@@ -16,7 +16,7 @@ namespace QuanLiGiuXe
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLoaiXe());
+            Application.Run(new FormQuanLyTK());
         }
     }
 }
