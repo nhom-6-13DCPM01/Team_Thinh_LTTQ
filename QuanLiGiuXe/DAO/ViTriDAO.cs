@@ -40,9 +40,9 @@ namespace QuanLiGiuXe.DAO
             return result > 0;
         }
 
-        public bool UpdateViTri(string tenvitri, int makhuvuc, int trangthai)
+        public bool UpdateViTri(int mavt ,string tenvitri, int makhuvuc, int trangthai)
         {
-            string query = string.Format("UPDATE dbo.ViTri SET TenViTri = N'{0}', MaKhuVuc = '{2}' , TrangThai = '{1}'", tenvitri, trangthai,makhuvuc);
+            string query = string.Format("UPDATE dbo.ViTri SET TenViTri = N'{1}', MaKhuVuc = '{3}' , TrangThai = '{2}' where idViTri = N'{0}'",mavt, tenvitri, trangthai,makhuvuc);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
 
             return result > 0;

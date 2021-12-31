@@ -7,17 +7,22 @@ using System.Threading.Tasks;
 
 namespace QuanLiGiuXe.DTO
 {
-    public class LoaiXe
+    class LoaiXe
     {
-        private string tenLoaiXe;
-        private decimal donGia;
+        private int id;
+        private string tenloaixe;
+        private decimal dongia;
+
         public LoaiXe(DataRow row)
         {
-            this.TenLoaiXe = row["tenLoaiXe"].ToString();
-            this.DonGia = (decimal)(row["donGia"]);
+            this.id = Convert.ToInt32(row["IdLoaiXe"]);
+            this.tenloaixe = row["TenLoaiXe"].ToString();
+            this.dongia = (decimal)row["DonGia"];
         }
 
-        public string TenLoaiXe { get => tenLoaiXe; set => tenLoaiXe = value; }
-        public decimal DonGia { get => donGia; set => donGia = value; }
+
+        public int Id { get => id; set => id = value; }
+        public string Tenloaixe { get => tenloaixe; set => tenloaixe = value; }
+        public decimal Dongia { get => dongia; set => dongia = value; }
     }
 }

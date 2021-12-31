@@ -89,9 +89,9 @@ namespace QuanLiGiuXe
 
             }
         }
-        void UpdateViTri(string tenvitri, int makhuvuc, int trangthai)
+        void UpdateViTri(int mavt,string tenvitri, int makhuvuc, int trangthai)
         {
-            if (ViTriDAO.Instance.UpdateViTri(tenvitri,makhuvuc,trangthai))
+            if (ViTriDAO.Instance.UpdateViTri(mavt,tenvitri,makhuvuc,trangthai))
             {
                 MessageBox.Show("Sửa thành công");
             }
@@ -104,11 +104,12 @@ namespace QuanLiGiuXe
         }
         private void btnSua_Click(object sender, EventArgs e)
         {
+            int mavt = Convert.ToInt32(txtMaViTri.Text);
             string tenvitri = txtTenViTri.Text;
             int makhuvuc = Convert.ToInt32(cbbKhuVuc.Text);
             int trangthai = Convert.ToInt32(txtTrangThai.Text);
 
-            UpdateViTri(tenvitri, makhuvuc, trangthai);
+            UpdateViTri(mavt,tenvitri, makhuvuc, trangthai);
 
         }
     }
