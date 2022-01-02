@@ -9,15 +9,20 @@ namespace QuanLiGiuXe.DTO
 {
     class LoaiXe
     {
-        private string tenLoaiXe;
-        private decimal donGiaH;
+        private int id;
+        private string tenloaixe;
+        private decimal dongia;
+
         public LoaiXe(DataRow row)
         {
-            this.TenLoaiXe = row["tenLoaiXe"].ToString();
-            this.DonGiaH = Convert.ToDecimal(row["donGiaH"]);
+            this.id = Convert.ToInt32(row["IdLoaiXe"]);
+            this.tenloaixe = row["TenLoaiXe"].ToString();
+            this.dongia = (decimal)row["DonGia"];
         }
 
-        public string TenLoaiXe { get => tenLoaiXe; set => tenLoaiXe = value; }
-        public decimal DonGiaH { get => donGiaH; set => donGiaH = value; }
+
+        public int Id { get => id; set => id = value; }
+        public string Tenloaixe { get => tenloaixe; set => tenloaixe = value; }
+        public decimal Dongia { get => dongia; set => dongia = value; }
     }
 }

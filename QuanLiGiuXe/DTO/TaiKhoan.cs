@@ -9,22 +9,21 @@ namespace QuanLiGiuXe.DTO
 {
     class TaiKhoan
     {
-        private string tenTaiKhoan;
-        private string matKhau;
-        private string tenNhanVien;
-        private bool vaiTro;
-
+        private int idnhanvien;
+        private int idtaikhoan;
+        private string tentk;
+        private string matkhau;
         public TaiKhoan(DataRow row)
         {
-            this.TenTaiKhoan = row["tenTaiKhoan"].ToString();
-            this.TenNhanVien = row["tenNhanVien"].ToString();
-            this.VaiTro = (Boolean)row["vaiTro"];
-            this.MatKhau = row["matKhau"].ToString();
+            this.Idtaikhoan = (int)row["IdTaiKhoan"];
+            this.Idnhanvien = (int)row["IdNhanVien"];
+            this.Tentk = row["TaiKhoan"].ToString();
+            this.Matkhau = row["MatKhau"].ToString();
         }
 
-        public string TenTaiKhoan { get => tenTaiKhoan; set => tenTaiKhoan = value; }
-        public string MatKhau { get => matKhau; set => matKhau = value; }
-        public string TenNhanVien { get => tenNhanVien; set => tenNhanVien = value; }
-        public bool VaiTro { get => vaiTro; set => vaiTro = value; }
+        public int Idnhanvien { get => idnhanvien; set => idnhanvien = value; }
+        public int Idtaikhoan { get => idtaikhoan; set => idtaikhoan = value; }
+        public string Tentk { get => tentk; set => tentk = value; }
+        public string Matkhau { get => matkhau; set => matkhau = value; }
     }
 }

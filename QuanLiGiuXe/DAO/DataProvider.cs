@@ -11,7 +11,7 @@ namespace QuanLiGiuXe.DAO
     class DataProvider
     {
         private static DataProvider instance; // Ctrl + R + E
-        private string connectionSTR = @"Data Source=DESKTOP-G00H53A\SQLEXPRESS;Initial Catalog = BaiGiuXe; Integrated Security = True";
+        private string connectionSTR = @"Data Source=DESKTOP-J98APIA;Initial Catalog=DBCuoiKy;Integrated Security=True";
 
         internal static DataProvider Instance
         {
@@ -58,6 +58,34 @@ namespace QuanLiGiuXe.DAO
         public int ExecuteNonQuery(string query, object[] parameter = null)
         {
             int data = 0;
+            using (SqlConnection connection = new SqlConnection(connectionSTR))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(query, connection);
+                if (parameter != null)
+                {
+                    string[] listPara = query.Split(' ');
+                    int i = 0;
+                    foreach (string item in listPara)
+                    {
+                        if (item.Contains('@'))
+                        {
+                            command.Parameters.AddWithValue(item, parameter[i]);
+                            i++;
+                        }
+                    }
+                }
+                data = command.ExecuteNonQuery();
+
+                connection.Close();
+
+            }
+            return data;
+        }
+        //Truy vấn trả về 1 đối tượng hoàn chỉnh
+        public object ExecuteScalar(string query, object[] parameter = null)
+        {
+            object data = 0;
 
             using (SqlConnection connection = new SqlConnection(connectionSTR))
             {
@@ -79,7 +107,7 @@ namespace QuanLiGiuXe.DAO
                     }
                 }
 
-                data = command.ExecuteNonQuery();
+                data = command.ExecuteScalar();
 
                 connection.Close();
             }
