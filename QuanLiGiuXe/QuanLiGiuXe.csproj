@@ -59,115 +59,139 @@
     <Compile Include="DTO\NhanVien.cs" />
     <Compile Include="DTO\TaiKhoan.cs" />
     <Compile Include="DTO\ViTri.cs" />
-    <Compile Include="FormDangNhap.cs">
+    <Compile Include="Form\Layout\FormLayoutSuCo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormDangNhap.Designer.cs">
+    <Compile Include="Form\Layout\FormLayoutSuCo.Designer.cs">
+      <DependentUpon>FormLayoutSuCo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\SuCo\FormLapBienBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\SuCo\FormLapBienBan.Designer.cs">
+      <DependentUpon>FormLapBienBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\SuCo\FormLapPhieuBoiThuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\SuCo\FormLapPhieuBoiThuong.Designer.cs">
+      <DependentUpon>FormLapPhieuBoiThuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ChucNangKhac\FormDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ChucNangKhac\FormDangNhap.Designer.cs">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormLayoutNhanVien.cs">
+    <Compile Include="Form\SuCo\FormKiemTra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLayoutNhanVien.Designer.cs">
+    <Compile Include="Form\SuCo\FormKiemTra.Designer.cs">
+      <DependentUpon>FormKiemTra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Layout\FormLayoutNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Layout\FormLayoutNhanVien.Designer.cs">
       <DependentUpon>FormLayoutNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormLoaiXe.cs">
+    <Compile Include="Form\Layout\FormLayoutQuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLoaiXe.Designer.cs">
+    <Compile Include="Form\Layout\FormLayoutQuanLy.Designer.cs">
+      <DependentUpon>FormLayoutQuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\QuanLy\FormLoaiXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\QuanLy\FormLoaiXe.Designer.cs">
       <DependentUpon>FormLoaiXe.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormNhanVien.cs">
+    <Compile Include="Form\QuanLy\FormNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormNhanVien.Designer.cs">
+    <Compile Include="Form\QuanLy\FormNhanVien.Designer.cs">
       <DependentUpon>FormNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormQuanLyKhuVuc.cs">
+    <Compile Include="Form\Layout\FormLayoutAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormQuanLyKhuVuc.Designer.cs">
-      <DependentUpon>FormQuanLyKhuVuc.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormSuCo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormSuCo.Designer.cs">
-      <DependentUpon>FormSuCo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormLayoutAdmin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormLayoutAdmin.Designer.cs">
+    <Compile Include="Form\Layout\FormLayoutAdmin.Designer.cs">
       <DependentUpon>FormLayoutAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormTrangChinh.cs">
+    <Compile Include="Form\ChucNangKhac\FormTrangChinh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormTrangChinh.Designer.cs">
+    <Compile Include="Form\ChucNangKhac\FormTrangChinh.Designer.cs">
       <DependentUpon>FormTrangChinh.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormViTri.cs">
+    <Compile Include="Form\QuanLy\FormBaiDo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormViTri.Designer.cs">
-      <DependentUpon>FormViTri.cs</DependentUpon>
+    <Compile Include="Form\QuanLy\FormBaiDo.Designer.cs">
+      <DependentUpon>FormBaiDo.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormXeRa.cs">
+    <Compile Include="Form\ChucNangKhac\FormXeRa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormXeRa.Designer.cs">
+    <Compile Include="Form\ChucNangKhac\FormXeRa.Designer.cs">
       <DependentUpon>FormXeRa.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormXeVao.cs">
+    <Compile Include="Form\ChucNangKhac\FormXeVao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormXeVao.Designer.cs">
+    <Compile Include="Form\ChucNangKhac\FormXeVao.Designer.cs">
       <DependentUpon>FormXeVao.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormQuanLyTK.cs">
+    <Compile Include="Form\QuanLy\FormTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormQuanLyTK.Designer.cs">
-      <DependentUpon>FormQuanLyTK.cs</DependentUpon>
+    <Compile Include="Form\QuanLy\FormTaiKhoan.Designer.cs">
+      <DependentUpon>FormTaiKhoan.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormDangNhap.resx">
+    <EmbeddedResource Include="Form\Layout\FormLayoutSuCo.resx">
+      <DependentUpon>FormLayoutSuCo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ChucNangKhac\FormDangNhap.resx">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLayoutNhanVien.resx">
+    <EmbeddedResource Include="Form\SuCo\FormKiemTra.resx">
+      <DependentUpon>FormKiemTra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Layout\FormLayoutNhanVien.resx">
       <DependentUpon>FormLayoutNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLoaiXe.resx">
+    <EmbeddedResource Include="Form\Layout\FormLayoutQuanLy.resx">
+      <DependentUpon>FormLayoutQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\QuanLy\FormLoaiXe.resx">
       <DependentUpon>FormLoaiXe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormNhanVien.resx">
+    <EmbeddedResource Include="Form\QuanLy\FormNhanVien.resx">
       <DependentUpon>FormNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormQuanLyKhuVuc.resx">
-      <DependentUpon>FormQuanLyKhuVuc.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormSuCo.resx">
-      <DependentUpon>FormSuCo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormLayoutAdmin.resx">
+    <EmbeddedResource Include="Form\Layout\FormLayoutAdmin.resx">
       <DependentUpon>FormLayoutAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormTrangChinh.resx">
+    <EmbeddedResource Include="Form\ChucNangKhac\FormTrangChinh.resx">
       <DependentUpon>FormTrangChinh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormViTri.resx">
-      <DependentUpon>FormViTri.cs</DependentUpon>
+    <EmbeddedResource Include="Form\QuanLy\FormBaiDo.resx">
+      <DependentUpon>FormBaiDo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormXeRa.resx">
+    <EmbeddedResource Include="Form\ChucNangKhac\FormXeRa.resx">
       <DependentUpon>FormXeRa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormXeVao.resx">
+    <EmbeddedResource Include="Form\ChucNangKhac\FormXeVao.resx">
       <DependentUpon>FormXeVao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormQuanLyTK.resx">
-      <DependentUpon>FormQuanLyTK.cs</DependentUpon>
+    <EmbeddedResource Include="Form\QuanLy\FormTaiKhoan.resx">
+      <DependentUpon>FormTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\SuCo\FormLapBienBan.resx">
+      <DependentUpon>FormLapBienBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

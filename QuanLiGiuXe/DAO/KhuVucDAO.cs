@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using QuanLiGiuXe.DTO;
 
 namespace QuanLiGiuXe.DAO
 {
@@ -21,6 +22,19 @@ namespace QuanLiGiuXe.DAO
         public DataTable GetListKhuVuc()
         {
             return DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.KhuVuc");
+        }
+
+        public List<KhuVuc> getListKhuVuc()
+        {
+            List<KhuVuc> list = new List<KhuVuc>();
+            string query = "SELECT * FROM KhuVuc";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            foreach (DataRow item in data.Rows)
+            {
+                KhuVuc khuVuc = new KhuVuc(item);
+                list.Add(khuVuc);
+            }
+            return list;
         }
 
         public bool AddKhuVuc(string tenkhuvuc, string trangthai)

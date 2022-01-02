@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanLiGiuXe
 {
-    public partial class FormLayoutNhanVien : Form
+    public partial class FormLayoutSuCo : Form
     {
-        //Thuộc tính
         private Form currentForm;
 
-        public FormLayoutNhanVien()
+        public FormLayoutSuCo()
         {
             InitializeComponent();
         }
@@ -34,25 +33,24 @@ namespace QuanLiGiuXe
             childForm.Show();
         }
 
-        private void FormLayoutNhanVien_Load(object sender, EventArgs e)
+        private void buttonMucKiemTra_Click(object sender, EventArgs e)
         {
-            labelTenTeam.Text = " BÃI GIỮ XE " + "\n" + "THỊNH VIỆT";
-            OpenChildForm(new FormXeVao(), sender);
+            OpenChildForm(new FormKiemTra(), sender);
         }
 
-        private void buttonXeVao_Click(object sender, EventArgs e)
+        private void buttonMucBienBan_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormXeVao(), sender);
+            OpenChildForm(new FormLapBienBan(), sender);
         }
 
-        private void buttonXeRa_Click(object sender, EventArgs e)
+        private void buttonMucBoiThuong_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormXeRa(), sender);
+            OpenChildForm(new FormLapPhieuBoiThuong(), sender);
         }
 
-        private void buttonSuCo_Click(object sender, EventArgs e)
+        private void FormLayoutSuCo_Load(object sender, EventArgs e)
         {
-            OpenChildForm(new FormSuCo(), sender);
+            buttonMucKiemTra_Click(sender, e);
         }
     }
 }

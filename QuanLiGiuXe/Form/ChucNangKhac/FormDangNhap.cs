@@ -105,19 +105,19 @@ namespace QuanLiGiuXe
                 {
                     if (kiemTraVaiTro("SELECT NhanVien.ChucVu FROM TaiKhoan INNER JOIN NhanVien ON TaiKhoan.IdNhanVien = NhanVien.IdNhanVien WHERE TaiKhoan.TaiKhoan = '" + taiKhoan + "' AND TaiKhoan.MatKhau = '" + matKhau + "'"))
                     {
+                        nhoMatKhau(taiKhoan, matKhau, checkBoxNhoMatKhau.Checked);
                         FormLayoutAdmin form = new FormLayoutAdmin();
                         this.Hide();
                         form.ShowDialog();
                         this.Close();
-                        nhoMatKhau(taiKhoan, matKhau, checkBoxNhoMatKhau.Checked);
                     }
                     else
                     {
+                        nhoMatKhau(taiKhoan, matKhau, checkBoxNhoMatKhau.Checked);
                         FormLayoutNhanVien form = new FormLayoutNhanVien();
                         this.Hide();
                         form.ShowDialog();
                         this.Close();
-                        nhoMatKhau(taiKhoan, matKhau, checkBoxNhoMatKhau.Checked);
                     }
                 }
                 else

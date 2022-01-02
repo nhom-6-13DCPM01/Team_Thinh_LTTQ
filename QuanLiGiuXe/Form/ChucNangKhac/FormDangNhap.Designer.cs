@@ -166,6 +166,7 @@ namespace QuanLiGiuXe
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "FormDangNhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDangNhap";
             this.Load += new System.EventHandler(this.FormDangNhap_Load);
             this.panel1.ResumeLayout(false);

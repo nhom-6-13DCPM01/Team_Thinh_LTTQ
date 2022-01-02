@@ -21,6 +21,13 @@ namespace QuanLiGiuXe
             LoadLoaiXe();
         }
 
+        private void dinhDangHeaderText()
+        {
+            dgvViTri.Columns[0].HeaderText = "Mã loại xe";
+            dgvViTri.Columns[1].HeaderText = "Tên loại xe";
+            dgvViTri.Columns[2].HeaderText = "Đơn giá";
+        }
+
         void LoadLoaiXe()
         {
             list.DataSource = LoaiXeDAO.Instance.GetListLoaiXe();
@@ -96,6 +103,11 @@ namespace QuanLiGiuXe
             txtMaLoaiXe.Clear();
             txtTenLoaiXe.Clear();
             LoadLoaiXe();
+        }
+
+        private void FormLoaiXe_Load(object sender, EventArgs e)
+        {
+            dinhDangHeaderText();
         }
     }
 }

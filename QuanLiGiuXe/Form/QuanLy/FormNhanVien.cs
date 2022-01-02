@@ -21,6 +21,14 @@ namespace QuanLiGiuXe
             LoadNhanVien();
         }
 
+        private void dinhDangHeaderText()
+        {
+            dgvNhanVien.Columns[0].HeaderText = "Mã nhân viên";
+            dgvNhanVien.Columns[1].HeaderText = "Họ và tên";
+            dgvNhanVien.Columns[2].HeaderText = "Chức vụ";
+            dgvNhanVien.Columns[3].HeaderText = "Ngày sinh";
+        }
+
         void LoadNhanVien()
         {
             list.DataSource = NhanVienDAO.Instance.GetListNhanVien();
@@ -120,6 +128,11 @@ namespace QuanLiGiuXe
             dateTimePicker1.Value = DateTime.Now;
             LoadNhanVien();
 
+        }
+
+        private void FormNhanVien_Load(object sender, EventArgs e)
+        {
+            dinhDangHeaderText();
         }
     }
 }
