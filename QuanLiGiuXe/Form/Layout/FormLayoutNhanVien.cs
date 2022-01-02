@@ -36,7 +36,7 @@ namespace QuanLiGiuXe
 
         private void FormLayoutNhanVien_Load(object sender, EventArgs e)
         {
-            labelTenTeam.Text = " BÃI GIỮ XE " + "\n" + "THỊNH VIỆT";
+            labelTenTeam.Text = "      BÃI GIỮ XE    " + "\n" + "  THỊNH VIỆT HÀ";
             OpenChildForm(new FormXeVao(), sender);
         }
 

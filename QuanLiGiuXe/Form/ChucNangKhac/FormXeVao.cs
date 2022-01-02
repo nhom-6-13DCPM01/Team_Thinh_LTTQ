@@ -54,7 +54,7 @@ namespace QuanLiGiuXe
                     if (itemViTri.Trangthai.Equals("Trống"))
                     {
                         Button btn = new Button() { Width = 100, Height = 100 };
-                        btn.BackColor = Color.AliceBlue;
+                        btn.BackColor = Color.CadetBlue;
                         btn.Text = itemViTri.Tenvitri;
                         btn.Font = new Font(Font.FontFamily, 16);
                         btn.Tag = itemViTri;
@@ -64,7 +64,7 @@ namespace QuanLiGiuXe
                     else
                     {
                         Button btn = new Button() { Width = 100, Height = 100 };
-                        btn.BackColor = Color.MistyRose;
+                        btn.BackColor = Color.IndianRed;
                         btn.Text = itemViTri.Tenvitri;
                         btn.Font = new Font(Font.FontFamily, 16);
                         btn.Tag = itemViTri;
@@ -93,7 +93,7 @@ namespace QuanLiGiuXe
                     if (itemViTri.Trangthai.Equals("Trống"))
                     {
                         Button btn = new Button() { Width = 100, Height = 100 };
-                        btn.BackColor = Color.AliceBlue;
+                        btn.BackColor = Color.CadetBlue;
                         btn.Text = itemViTri.Tenvitri;
                         btn.Font = new Font(Font.FontFamily, 16);
                         btn.Tag = itemViTri;
@@ -103,7 +103,7 @@ namespace QuanLiGiuXe
                     else
                     {
                         Button btn = new Button() { Width = 100, Height = 100 };
-                        btn.BackColor = Color.MistyRose;
+                        btn.BackColor = Color.IndianRed;
                         btn.Text = itemViTri.Tenvitri;
                         btn.Font = new Font(Font.FontFamily, 16);
                         btn.Tag = itemViTri;
@@ -246,8 +246,8 @@ namespace QuanLiGiuXe
             load_data_xe("SELECT TheXe.IdTheXe, TheXe.BienSo, ViTri.TenViTri, LoaiXe.TenLoaiXe, SoXeVao.NgayTao FROM TheXe INNER JOIN LoaiXe ON TheXe.IdLoaiXe = LoaiXe.IdLoaiXe INNER JOIN SoXeVao ON TheXe.IdTheXe = SoXeVao.IdTheXe INNER JOIN ViTri ON TheXe.IdViTri = ViTri.idViTri");
 
             //Màu sắc
-            labelChuThichChoTrong.BackColor = Color.AliceBlue;
-            labelChuThichDaCoXe.BackColor = Color.MistyRose;
+            labelChuThichChoTrong.BackColor = Color.CadetBlue;
+            labelChuThichDaCoXe.BackColor = Color.IndianRed;
             
             //Dữ liệu comboBox
             //Vị trí

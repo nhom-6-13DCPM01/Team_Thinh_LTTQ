@@ -14,7 +14,7 @@ namespace QuanLiGiuXe
     public partial class FormDangNhap : Form
     {
         private SqlConnection connection;
-        private String connectionString = "Data Source=DESKTOP-J98APIA;Initial Catalog=DBBaiGiuXe;Integrated Security=True";
+        private String connectionString = "Data Source=DESKTOP-J98APIA;Initial Catalog=DBCuoiKy;Integrated Security=True";
         private SqlCommand command;
         private SqlDataAdapter adapter = new SqlDataAdapter();
 
