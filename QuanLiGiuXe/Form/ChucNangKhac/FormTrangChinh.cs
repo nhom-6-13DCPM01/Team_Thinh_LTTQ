@@ -95,7 +95,7 @@ namespace QuanLiGiuXe
         private void buttonXacNhan_Click(object sender, EventArgs e)
         {
             load_data_chart("SELECT TongTien 'Tổng tiền', MONTH(NgayThanhToan) 'Tháng' FROM HoaDon");
-            load_data_labelByYear("SELECT SUM(TongTien) 'total' FROM HoaDon WHERE YEAR(NgayThanhToan) = '"+ comboBoxNam.Text.ToString() +"'");
+            load_data_labelByYear("SELECT SUM(TongTien) 'total' FROM HoaDon WHERE YEAR(NgayThanhToan) = '"+ comboBoxNam.SelectedValue.ToString() +"'");
         }
     }
 }

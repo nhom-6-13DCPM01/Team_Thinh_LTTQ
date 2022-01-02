@@ -56,7 +56,7 @@ namespace QuanLiGiuXe.DAO
 
         public bool UpdateKhuVuc(string tenkhuvuc, int trangthai)
         {
-            string query = string.Format("UPDATE dbo.KhuVuc SET TenKhuVuc = N'{0}', TrangThai = {1} ", tenkhuvuc, trangthai);
+            string query = string.Format("UPDATE dbo.KhuVuc SET TenKhuVuc = N'{0}', TrangThai = N'{1}' ", tenkhuvuc, trangthai);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
 
             return result > 0;
