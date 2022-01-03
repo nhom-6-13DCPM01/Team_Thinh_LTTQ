@@ -158,7 +158,7 @@ namespace QuanLiGiuXe
             connection = new SqlConnection(connectionString);
             connection.Open();
             DateTime ngayTao = layNgayTao(connection, "SELECT SoXeVao.NgayTao FROM SoXeVao WHERE SoXeVao.IdTheXe = '"+ idTheXe +"'");
-            decimal donGia = layDonGia(connection, "SELECT LoaiXe.DonGia FROM TheXe INNER JOIN LoaiXe ON TheXe.IdLoaiXe = LoaiXe.IdLoaiXe WHERE TheXe.IdTheXe = '" + idTheXe + "'");
+            decimal donGia = layDonGia(connection, "SELECT LoaiXe.DonGia FROM TheXe INNER JOIN LoaiXe ON TheXe.IdLoaiXe = LoaiXe.IdLoaiXe WHERE TheXe.IdTheXe = '" + idTheXe.ToString() + "'");
             //vấn đề em chưa gặp nên sẽ tiếp tục tương lai cái thẻ xe đầu tiên không chung 1 ngày
             decimal tongTien = (DateTime.Now.Hour - ngayTao.Hour) * donGia;
             MessageBox.Show("Số tiền thanh toán: " + tongTien.ToString(), "Thông báo");

@@ -59,11 +59,11 @@ namespace QuanLiGiuXe
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelTitle.AutoSize = true;
             this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitle.Location = new System.Drawing.Point(104, 32);
+            this.labelTitle.Location = new System.Drawing.Point(81, 31);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(230, 25);
+            this.labelTitle.Size = new System.Drawing.Size(263, 25);
             this.labelTitle.TabIndex = 0;
-            this.labelTitle.Text = "BÃI GIỮ XE THỊNH VIỆT";
+            this.labelTitle.Text = "BÃI GIỮ XE THỊNH VIỆT HÀ";
             // 
             // panel2
             // 
@@ -167,7 +167,7 @@ namespace QuanLiGiuXe
             this.Controls.Add(this.panel1);
             this.Name = "FormDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormDangNhap";
+            this.Text = "Đăng nhập";
             this.Load += new System.EventHandler(this.FormDangNhap_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
