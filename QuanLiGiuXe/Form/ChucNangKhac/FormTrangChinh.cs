@@ -86,15 +86,15 @@ namespace QuanLiGiuXe
 
         private void FormTrangChinh_Load(object sender, EventArgs e)
         {
-            load_data_combobox("SELECT YEAR(NgayThanhToan) 'Năm' FROM HoaDon");
-            buttonXacNhan_Click(sender, e);
+            load_data_combobox("SELECT YEAR(NgayThanhToan) 'Năm' FROM HoaDon GROUP BY YEAR(NgayThanhToan) ORDER BY YEAR(NgayThanhToan)");
+            load_data_chart("SELECT SUM(TongTien) 'Tổng tiền', MONTH(NgayThanhToan) 'Tháng' FROM HoaDon WHERE YEAR(NgayThanhToan) = '" + DateTime.Now.Year.ToString() + "' GROUP BY MONTH(NgayThanhToan)"); ;
             load_data_label("SELECT SUM(TongTien)'total' FROM HoaDon WHERE YEAR(NgayThanhToan) >= '"+ DateTime.MinValue.Year.ToString() +"' AND YEAR(NgayThanhToan) <= '"+ DateTime.MaxValue.Year.ToString() +"'");
             load_data_labelByYear("SELECT SUM(TongTien)'total' FROM HoaDon WHERE YEAR(NgayThanhToan) = '" + DateTime.Now.Year.ToString() + "'");
         }
 
         private void buttonXacNhan_Click(object sender, EventArgs e)
         {
-            load_data_chart("SELECT TongTien 'Tổng tiền', MONTH(NgayThanhToan) 'Tháng' FROM HoaDon");
+            load_data_chart("SELECT SUM(TongTien) 'Tổng tiền', MONTH(NgayThanhToan) 'Tháng' FROM HoaDon WHERE YEAR(NgayThanhToan) = '" + Convert.ToDateTime(comboBoxNam.SelectedValue.ToString()).Year + "' GROUP BY MONTH(NgayThanhToan)");
             load_data_labelByYear("SELECT SUM(TongTien) 'total' FROM HoaDon WHERE YEAR(NgayThanhToan) = '"+ comboBoxNam.SelectedValue.ToString() +"'");
         }
     }
